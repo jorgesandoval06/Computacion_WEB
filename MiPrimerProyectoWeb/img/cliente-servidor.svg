@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img">
+  <title>Petición y respuesta entre navegador y servidor</title>
+  <rect width="640" height="220" fill="#ffffff"/>
+  <rect x="30" y="60" width="170" height="100" rx="10" fill="#e8f1fd" stroke="#1d6fd8" stroke-width="2"/>
+  <text x="115" y="105" text-anchor="middle" font-family="Arial" font-size="18" fill="#1c2430">Navegador</text>
+  <text x="115" y="130" text-anchor="middle" font-family="Arial" font-size="14" fill="#1c2430">(cliente)</text>
+  <rect x="440" y="60" width="170" height="100" rx="10" fill="#e8f1fd" stroke="#1d6fd8" stroke-width="2"/>
+  <text x="525" y="105" text-anchor="middle" font-family="Arial" font-size="18" fill="#1c2430">Servidor</text>
+  <text x="525" y="130" text-anchor="middle" font-family="Arial" font-size="14" fill="#1c2430">HTML · CSS · JS</text>
+  <line x1="205" y1="90" x2="435" y2="90" stroke="#1d6fd8" stroke-width="2.5"/>
+  <polygon points="435,90 424,84 424,96" fill="#1d6fd8"/>
+  <text x="320" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#1c2430">Petición</text>
+  <line x1="435" y1="135" x2="205" y2="135" stroke="#1c2430" stroke-width="2.5"/>
+  <polygon points="205,135 216,129 216,141" fill="#1c2430"/>
+  <text x="320" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#1c2430">Respuesta</text>
+</svg>

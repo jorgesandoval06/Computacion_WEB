@@ -1,0 +1,92 @@
+:root {
+  --fondo: #f5f7fa;
+  --texto: #1c2430;
+  --acento: #1d6fd8;
+  --superficie: #ffffff;
+  --borde: #d5dce6;
+}
+
+body.oscuro {
+  --fondo: #11161d;
+  --texto: #e6ebf2;
+  --acento: #6cb0ff;
+  --superficie: #1a212b;
+  --borde: #2d3745;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+.encabezado {
+  padding: 3rem 1.5rem 2rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-umb {
+  display: block;
+  width: 6rem;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+.encabezado h1 { margin: 0 0 .5rem; font-size: 2.2rem; }
+.subtitulo { margin: 0; font-size: 1.1rem; opacity: .8; }
+
+main { max-width: 48rem; margin: 0 auto; padding: 0 1.5rem; }
+
+.intro img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: var(--superficie);
+}
+
+.contenido {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.contenido h2 { margin-top: 0; }
+
+a { color: var(--acento); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--acento); outline-offset: 2px; }
+
+code {
+  background: var(--fondo);
+  padding: .1rem .4rem;
+  border-radius: 4px;
+}
+
+button {
+  font: inherit;
+  padding: .6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--acento);
+  color: #fff;
+  cursor: pointer;
+}
+
+body.oscuro button { color: #11161d; }
+
+.pie {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: .9rem;
+  opacity: .7;
+}
