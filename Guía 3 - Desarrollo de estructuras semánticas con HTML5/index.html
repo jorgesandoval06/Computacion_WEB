@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cursos en línea | Implementación de una página HTML5 semántica</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: logo, menú de navegación y carrito -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns identidad-sitio">
+                    <img src="img/logo.jpg" id="logo" alt="Logo de la plataforma de cursos en línea">
+                    <h1 id="nombre-sitio">Cursos en Línea</h1>
+                    <p class="descripcion-sitio">Plataforma de formación virtual con cursos para aprender a tu ritmo.</p>
+                </div>
+                <div class="six columns">
+                    <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+                        <a class="enlace" href="#hero">Inicio</a>
+                        <a class="enlace" href="#beneficios">Nosotros</a>
+                        <a class="enlace" href="#lista-cursos">Cursos</a>
+                        <a class="enlace" href="#destacados">Noticias</a>
+                        <a class="enlace" href="#footer">Contacto</a>
+                    </nav>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito" alt="Carrito de compras">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido-principal">
+
+        <!-- SECTION 1: presentación y buscador -->
+        <section id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                            <h2>Siempre aprende algo nuevo</h2>
+                            <p>Todos los cursos a $500.000</p>
+                            <form action="#" id="busqueda" method="post" class="formulario">
+                                <input class="u-full-width" type="text" placeholder="¿Qué te gustaría aprender?" id="buscador" aria-label="Buscar cursos">
+                                <input type="submit" id="submit-buscador" class="submit-buscador" value="Buscar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: beneficios de la plataforma -->
+        <section id="beneficios" class="barra">
+            <h2 style="position:absolute;left:-9999px">Beneficios de la plataforma</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>20,000 Cursos en línea <br>
+                        Explora los temas más recientes</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Instructores Expertos <br>
+                        Aprende con distintos estilos</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Acceso de por vida <br>
+                        Aprende a tu ritmo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: catálogo de cursos (cada curso es un ARTICLE independiente) -->
+        <section id="lista-cursos" class="container">
+            <h2 id="encabezado" class="encabezado">Catálogo de Cursos</h2>
+            <div class="row">
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso1.jpg" class="imagen-curso u-full-width" alt="Imagen del curso HTML5, CSS3, JavaScript Basic">
+                        <div class="info-card">
+                            <h2>HTML5, CSS3, JavaScript Basic</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Curso de Comida Internacional">
+                        <div class="info-card">
+                            <h2>Curso de Comida Internacional</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Música para Principiantes">
+                        <div class="info-card">
+                            <h2>Música para Principiantes</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso4.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Finanzas Empresariales">
+                        <div class="info-card">
+                            <h2>Finanzas Empresariales</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.500.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso5.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Decoración de Interiores">
+                        <div class="info-card">
+                            <h2>Decoración de Interiores</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso7.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Diseño Web">
+                        <div class="info-card">
+                            <h2>Diseño Web</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso8.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Excel Financiero Avanzado">
+                        <div class="info-card">
+                            <h2>Excel Financiero Avanzado</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.500.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso9.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Administración de Empresas">
+                        <div class="info-card">
+                            <h2>Administración de Empresas</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.500.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso10.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Comunicación Digital">
+                        <div class="info-card">
+                            <h2>Comunicación Digital</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso6.jpg" class="imagen-curso u-full-width" alt="Imagen del curso Pastelería y Repostería">
+                        <div class="info-card">
+                            <h2>Pastelería y Repostería</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso11.jpg" class="imagen-curso u-full-width" alt="Imagen del curso JavaScript">
+                        <div class="info-card">
+                            <h2>JavaScript</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.500.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="four columns">
+                    <article class="card">
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width" alt="Imagen del curso 100 Recetas Colombianas">
+                        <div class="info-card">
+                            <h2>100 Recetas Colombianas</h2>
+                            <p>Jorge Sandoval</p>
+                            <img src="img/estrellas.png" alt="Calificación de cinco estrellas">
+                            <p class="precio">$1.000.000 <span class="u-pull-right">$500.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASIDE: contenido complementario -->
+        <aside id="destacados" class="container">
+            <h2>Destacado de la semana</h2>
+            <figure>
+                <img src="img/curso1.jpg" class="u-full-width" alt="Estudiante tomando el curso de HTML5, CSS3 y JavaScript">
+                <figcaption>Curso recomendado: HTML5, CSS3, JavaScript Basic.</figcaption>
+                <p>Promoción válida hasta el <time datetime="2026-12-31">31 de diciembre de 2026</time>.</p>
+            </figure>
+            
+        </aside>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu" aria-label="Enlaces para empresas y aliados">
+                        <a class="enlace" href="#">Para tu Negocio</a>
+                        <a class="enlace" href="#">Conviértete en Instructor</a>
+                        <a class="enlace" href="#">Soporte</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu" aria-label="Información de la empresa">
+                        <a class="enlace" href="#">¿Quiénes Somos?</a>
+                        <a class="enlace" href="#">Empleo</a>
+                        <a class="enlace" href="#">Blog</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns footer-info">
+                    <p>Contacto: contacto@cursosenlinea.example</p>
+                    <p>&copy; <time datetime="2026">2026</time> Cursos en Línea. Desarrollado por Jorge Armando Sandoval. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
