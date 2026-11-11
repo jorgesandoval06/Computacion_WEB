@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instituto Horizonte: programas académicos, admisiones y vida estudiantil.">
+  <title>Instituto Horizonte | Educación para el futuro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="container header__in">
+      <a class="logo" href="#inicio"><img src="img/logo.svg" alt="" width="36" height="36"> Instituto Horizonte</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">☰</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#programas">Programas</a></li>
+          <li><a href="#galeria">Campus</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#admisiones" class="btn btn--small">Admisiones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero__in">
+        <div class="hero__text">
+          <p class="eyebrow">Admisiones abiertas 2027</p>
+          <h1>Aprende hoy, lidera mañana</h1>
+          <p>Programas técnicos y profesionales con enfoque práctico, horarios flexibles y acompañamiento personalizado.</p>
+          <p><a class="btn" href="#admisiones">Solicitar información</a> <a class="btn btn--ghost" href="#programas">Ver programas</a></p>
+        </div>
+        <img class="hero__img" src="img/hero.svg" alt="Ilustración de estudiantes frente a un edificio universitario" width="520" height="380">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-cifras">
+      <div class="container">
+        <h2 id="t-cifras" class="sr-only">Cifras</h2>
+        <ul class="stats">
+          <li><strong>25+</strong> años de trayectoria</li>
+          <li><strong>12</strong> programas activos</li>
+          <li><strong>5.000</strong> egresados</li>
+          <li><strong>92%</strong> empleabilidad</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="programas" aria-labelledby="t-prog">
+      <div class="container">
+        <h2 id="t-prog">Nuestros programas</h2>
+        <p class="lead">Filtra por área y conoce cada programa.</p>
+        <div class="filters" role="group" aria-label="Filtrar programas">
+          <button class="chip is-active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="tecnologia">Tecnología</button>
+          <button class="chip" data-filter="negocios">Negocios</button>
+          <button class="chip" data-filter="salud">Salud</button>
+        </div>
+        <div class="cards" id="cards">
+          <article class="card" data-area="tecnologia">
+            <img src="img/tecnologia.svg" alt="Icono de código" width="96" height="96" loading="lazy">
+            <h3>Ingeniería de Software</h3>
+            <p>Desarrollo web, bases de datos y arquitectura de aplicaciones.</p>
+            <button class="link-btn" data-info="Duración: 8 semestres · Modalidad: presencial y virtual">Más detalles</button>
+          </article>
+          <article class="card" data-area="negocios">
+            <img src="img/negocios.svg" alt="Icono de gráfica" width="96" height="96" loading="lazy">
+            <h3>Administración de Empresas</h3>
+            <p>Gestión, finanzas y emprendimiento con casos reales.</p>
+            <button class="link-btn" data-info="Duración: 8 semestres · Modalidad: presencial">Más detalles</button>
+          </article>
+          <article class="card" data-area="salud">
+            <img src="img/salud.svg" alt="Icono de cruz de salud" width="96" height="96" loading="lazy">
+            <h3>Enfermería</h3>
+            <p>Formación clínica con prácticas en hospitales aliados.</p>
+            <button class="link-btn" data-info="Duración: 8 semestres · Modalidad: presencial">Más detalles</button>
+          </article>
+          <article class="card" data-area="tecnologia">
+            <img src="img/tecnologia.svg" alt="Icono de código" width="96" height="96" loading="lazy">
+            <h3>Análisis de Datos</h3>
+            <p>Estadística, visualización y aprendizaje automático.</p>
+            <button class="link-btn" data-info="Duración: 6 semestres · Modalidad: virtual">Más detalles</button>
+          </article>
+        </div>
+        <p class="info" id="info" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section" id="galeria" aria-labelledby="t-gal">
+      <div class="container">
+        <h2 id="t-gal">Vida en el campus</h2>
+        <div class="gallery">
+          <figure><img src="img/campus1.svg" alt="Biblioteca del campus" loading="lazy" width="400" height="260"><figcaption>Biblioteca</figcaption></figure>
+          <figure><img src="img/campus2.svg" alt="Laboratorio de cómputo" loading="lazy" width="400" height="260"><figcaption>Laboratorios</figcaption></figure>
+          <figure><img src="img/campus3.svg" alt="Zonas deportivas" loading="lazy" width="400" height="260"><figcaption>Deportes</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq" aria-labelledby="t-faq">
+      <div class="container container--narrow">
+        <h2 id="t-faq">Preguntas frecuentes</h2>
+        <details><summary>¿Cuáles son los requisitos de admisión?</summary><p>Documento de identidad, certificado de estudios y diligenciar el formulario de admisión.</p></details>
+        <details><summary>¿Hay becas disponibles?</summary><p>Sí, ofrecemos becas por mérito académico y apoyo socioeconómico.</p></details>
+        <details><summary>¿Puedo estudiar en modalidad virtual?</summary><p>Varios programas se ofrecen en modalidad virtual o mixta.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="admisiones" aria-labelledby="t-adm">
+      <div class="container container--narrow">
+        <h2 id="t-adm">Solicita información</h2>
+        <form id="form" novalidate>
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" required autocomplete="email">
+          <label for="programa">Programa de interés</label>
+          <select id="programa" name="programa" required>
+            <option value="">Selecciona…</option>
+            <option>Ingeniería de Software</option>
+            <option>Administración de Empresas</option>
+            <option>Enfermería</option>
+            <option>Análisis de Datos</option>
+          </select>
+          <button class="btn" type="submit">Enviar solicitud</button>
+          <p class="msg" id="msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <p>© 2026 Instituto Horizonte · Proyecto académico</p>
+      <p><a href="#inicio">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
